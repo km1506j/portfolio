@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Takashi Kajihara</title>
+    <meta name="description" content="webサイトのコーディングを仕事としています。HTML、CSS、JavaScriptに対応しております。" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assets/style/main.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__inner">
+                <h1 class="header__name">
+                    <img src="/assets/image/logo.svg" alt="Takashi Kajihara" class="header__logo">
+                </h1>
+                <div class="header__hamburger"></div>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__nav-item"><a href="#top" class="header__nav-link">top</a></li>
+                    <li class="header__nav-item"><a href="#skill" class="header__nav-link">skill</a></li>
+                    <li class="header__nav-item"><a href="#works" class="header__nav-link">works</a></li>
+                    <li class="header__nav-item"><a href="#contact" class="header__nav-link">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="top" class="top">
+            <div class="top__container">
+                <img src="/assets/image/face.jpg" alt="" class="top__img">
+                <div class="top__content">
+                    <div class="top__name-box">
+                        <p class="top__name-kana">Takashi Kajihara</p>
+                        <h2 class="top__name">梶原 崇史</h2>
+                    </div>
+                    <div class="top__text-box">
+                        <p class="top__text">スクールでweb制作のスキルを学び、</p>
+                        <p class="top__text">デザイン以外のコーディングなどを手掛けています。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skill" class="skill">
+            <div class="skill__container">
+                <h2 class="skill__title">Skill</h2>
+                <ul class="skill__list">
+                    <li class="skill__item">
+                        <div class="skill__inner">
+                            <p class="skill__name">Webサイト制作</p>
+                            <p class="skill__text">HTML/CSS/JavaScriptを使ったサイトを作ることができます。</p>
+                        </div>
+                    </li>
+                    <li class="skill__item">
+                        <div class="skill__inner">
+                            <p class="skill__name">jQuery</p>
+                            <p class="skill__text">webサイトに動きを付けることができます。</p>
+                        </div>
+                    </li>
+                    <li class="skill__item">
+                        <div class="skill__inner">
+                            <p class="skill__name">sass</p>
+                            <p class="skill__text">メンテナンス性を重視したsassも利用可能です。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="works" class="works">
+            <div class="works__container">
+                <h2 class="works__title">Works</h2>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="works__link">学習塾 デモ制作</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="works__link">化粧品紹介 デモ制作</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="works__link">脱毛サロン デモ制作</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="works__link">農業機器メーカー デモ制作</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <div id="contact" class="contact">
+            <a href="" class="contact__link">contact</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">Copyright @ 2023 Takashi Kajihara All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="/assets/script/main.js"></script>
+</body>
+
+</html>
