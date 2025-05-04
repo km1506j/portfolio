@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Takashi Kajihara</title>
+    <title>IT axis</title>
     <meta name="description" content="webサイトのコーディングを仕事としています。HTML、CSS、JavaScriptに対応しております。" />
+    <link rel="icon" href="/assets/image/favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,38 +21,29 @@
     <header class="header">
         <div class="header__container">
             <div class="header__inner">
-                <h1 class="header__name">
-                    <img src="/assets/image/logo.svg" alt="Takashi Kajihara" class="header__logo">
-                </h1>
+                <a href="/" class="header__top-link">
+                    <h1 class="header__name">
+                        <img src="/assets/image/logo.svg" alt="ITAXIS" class="header__logo">
+                    </h1>
+                </a>
                 <div class="header__hamburger"></div>
             </div>
             <nav class="header__nav">
                 <ul class="header__list">
-                    <li class="header__nav-item"><a href="#top" class="header__nav-link">top</a></li>
                     <li class="header__nav-item"><a href="#skill" class="header__nav-link">skill</a></li>
                     <li class="header__nav-item"><a href="#works" class="header__nav-link">works</a></li>
-                    <li class="header__nav-item"><a href="#contact" class="header__nav-link">contact</a></li>
+                    <li class="header__nav-item"><a href="#news" class="header__nav-link">news</a></li>
+                    <li class="header__nav-item"><a href="#about" class="header__nav-link">about</a></li>
+                    <li class="header__nav-item"><a href="/contact/" class="header__nav-link">contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="main">
-        <section id="top" class="top">
-            <div class="top__container">
-                <img src="/assets/image/face.jpg" alt="" class="top__img">
-                <div class="top__content">
-                    <div class="top__name-box">
-                        <p class="top__name-kana">Takashi Kajihara</p>
-                        <h2 class="top__name">梶原 崇史</h2>
-                    </div>
-                    <div class="top__text-box">
-                        <p class="top__text">スクールでweb制作のスキルを学び、</p>
-                        <p class="top__text">デザイン以外のコーディングなどを手掛けています。</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="main-visual">
+            <div class="main-visual__img"></div>
+        </div>
 
         <section id="skill" class="skill">
             <div class="skill__container">
@@ -60,19 +52,20 @@
                     <li class="skill__item">
                         <div class="skill__inner">
                             <p class="skill__name">Webサイト制作</p>
-                            <p class="skill__text">HTML/CSS/JavaScriptを使ったサイトを作ることができます。</p>
+                            <p class="skill__text">HTML/CSS/JavaScriptを使ったサイトを作ることができます。BEMを用いて可読性と保守性に優れたマークアップが可能です。
+                            </p>
                         </div>
                     </li>
                     <li class="skill__item">
                         <div class="skill__inner">
                             <p class="skill__name">jQuery</p>
-                            <p class="skill__text">webサイトに動きを付けることができます。</p>
+                            <p class="skill__text">スクロールに応じたアニメーションやホバーエフェクトなど、webサイトに動きを付けることができます。</p>
                         </div>
                     </li>
                     <li class="skill__item">
                         <div class="skill__inner">
                             <p class="skill__name">sass</p>
-                            <p class="skill__text">メンテナンス性を重視したsassも利用可能です。</p>
+                            <p class="skill__text">Sassを活用することで、効率的で見通しの良いスタイル設計が可能です。保守しやすく、後からの修正や機能追加にも柔軟に対応できます。</p>
                         </div>
                     </li>
                 </ul>
@@ -99,16 +92,55 @@
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
+                <a href="#" class="works__more">一覧</a>
+            </div>
+        </section>
+
+        <section id="news" class="news">
+            <div class="news__container">
+                <h2 class="news__title">News</h2>
+                <ul class="news__list">
+                    <li class="news__item">
+                        <a href="#" class="news__link">
+                            <div class="news__info">
+                                <time class="news__date" datetime="2025-05-03">2025.05.03</time>
+                                <p class="news__category">NEWS</p>
+                            </div>
+                            <p class="news__headline">ポートフォリオを公開しました。</p>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="news__more">一覧</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about__container">
+                <h2 class="about__title">About Me</h2>
+                <div class="about__flex">
+                    <img src="/assets/image/face.jpg" alt="" class="about__img">
+                    <div class="about__content">
+                        <div class="about__name-box">
+                            <p class="about__name-kana">Takashi Kajihara</p>
+                            <h2 class="about__name">梶原 崇史</h2>
+                        </div>
+                        <div class="about__text-box">
+                            <p class="about__text">
+                                デザインをもとにしたコーディングを専門に行っており、HTML/CSS/JavaScriptを使ったWebサイトの実装全般をお任せいただけます。</p>
+                            <p class="about__text">再現性と保守性を重視した丁寧なコーディングを心がけています。</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <div id="contact" class="contact">
-            <a href="" class="contact__link">contact</a>
+            <a href="/contact/" class="contact__link">contact</a>
         </div>
     </main>
 
     <footer class="footer">
-        <p class="footer__text">Copyright @ 2023 Takashi Kajihara All Rights Reserved.</p>
+        <p class="footer__text">Copyright @ 2025 IT axis All Rights Reserved.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
